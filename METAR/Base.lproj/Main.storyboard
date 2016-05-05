@@ -1,25 +1,76 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="METAR" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIScrollView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="LXY-ll-Tfi">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.63137254901960782" green="0.83137254901960778" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type ICAO code (UUDD, UUWW, UUEE and etc. )" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbX-Ca-bSA">
+                                <rect key="frame" x="20" y="131" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="fLS-II-D6K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="l0O-nV-MSz">
+                                <rect key="frame" x="282" y="282" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63137254901960782" green="0.83137254901960778" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="l0O-nV-MSz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0pG-NH-U1b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nbX-Ca-bSA" secondAttribute="trailing" id="17X-4n-G0g"/>
+                            <constraint firstItem="LXY-ll-Tfi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="2Fr-XU-R1T"/>
+                            <constraint firstItem="LXY-ll-Tfi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" symbolic="YES" id="BiZ-k4-G5n"/>
+                            <constraint firstItem="l0O-nV-MSz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GI3-Fe-Sgl"/>
+                            <constraint firstItem="LXY-ll-Tfi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jc2-UI-Wla"/>
+                            <constraint firstItem="LXY-ll-Tfi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Ofv-aU-y1S"/>
+                            <constraint firstItem="nbX-Ca-bSA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PsC-kF-zJd"/>
+                            <constraint firstItem="nbX-Ca-bSA" firstAttribute="top" secondItem="LXY-ll-Tfi" secondAttribute="bottom" constant="67" id="T7H-bZ-7rQ"/>
+                            <constraint firstItem="LXY-ll-Tfi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="XWl-3w-5sh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LXY-ll-Tfi" secondAttribute="trailing" constant="-20" id="aYW-ac-bNI"/>
+                            <constraint firstItem="LXY-ll-Tfi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="mcq-Qc-4Ut"/>
+                            <constraint firstItem="nbX-Ca-bSA" firstAttribute="top" secondItem="LXY-ll-Tfi" secondAttribute="top" id="uLi-Tl-oKD"/>
+                            <constraint firstItem="nbX-Ca-bSA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zIT-vv-fMN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2Fr-XU-R1T"/>
+                                <exclude reference="XWl-3w-5sh"/>
+                                <exclude reference="mcq-Qc-4Ut"/>
+                                <exclude reference="uLi-Tl-oKD"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="l0O-nV-MSz" id="81O-nM-IIL"/>
+                        <outlet property="searchBar" destination="LXY-ll-Tfi" id="t0g-lh-mJD"/>
+                        <outlet property="textLabel" destination="nbX-Ca-bSA" id="OCz-sH-SHx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="429"/>
         </scene>
     </scenes>
 </document>

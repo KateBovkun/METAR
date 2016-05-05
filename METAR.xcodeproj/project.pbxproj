@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16C7296790F339EDFB8003F5 /* Pods_METAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517677DC7C2A2B434D5AC383 /* Pods_METAR.framework */; };
 		6AB7EF2B1C56563400C2B503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB7EF2A1C56563400C2B503 /* AppDelegate.swift */; };
 		6AB7EF2D1C56563400C2B503 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB7EF2C1C56563400C2B503 /* ViewController.swift */; };
 		6AB7EF301C56563400C2B503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB7EF2E1C56563400C2B503 /* Main.storyboard */; };
 		6AB7EF321C56563400C2B503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AB7EF311C56563400C2B503 /* Assets.xcassets */; };
 		6AB7EF351C56563400C2B503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB7EF331C56563400C2B503 /* LaunchScreen.storyboard */; };
 		6AB7EF401C56563400C2B503 /* METARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB7EF3F1C56563400C2B503 /* METARTests.swift */; };
+		6AB7EF4B1C565ABF00C2B503 /* ForecastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB7EF4A1C565ABF00C2B503 /* ForecastManager.swift */; };
+		6AB7EF4F1C565BD100C2B503 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB7EF4E1C565BD100C2B503 /* APIManager.swift */; };
+		6AEDD4C51C5689F400388D79 /* METAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDD4C41C5689F400388D79 /* METAR.swift */; };
+		6AEDD4C71C568DCD00388D79 /* METARInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDD4C61C568DCD00388D79 /* METARInfo.swift */; };
+		6AEDD4C91C568DDA00388D79 /* METARTranslations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDD4C81C568DDA00388D79 /* METARTranslations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		517677DC7C2A2B434D5AC383 /* Pods_METAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_METAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB7EF271C56563400C2B503 /* METAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = METAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB7EF2A1C56563400C2B503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AB7EF2C1C56563400C2B503 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +43,13 @@
 		6AB7EF3B1C56563400C2B503 /* METARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = METARTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB7EF3F1C56563400C2B503 /* METARTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = METARTests.swift; sourceTree = "<group>"; };
 		6AB7EF411C56563400C2B503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AB7EF4A1C565ABF00C2B503 /* ForecastManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastManager.swift; sourceTree = "<group>"; };
+		6AB7EF4E1C565BD100C2B503 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		6AEDD4C41C5689F400388D79 /* METAR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = METAR.swift; sourceTree = "<group>"; };
+		6AEDD4C61C568DCD00388D79 /* METARInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = METARInfo.swift; sourceTree = "<group>"; };
+		6AEDD4C81C568DDA00388D79 /* METARTranslations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = METARTranslations.swift; sourceTree = "<group>"; };
+		B48EC4DABBFAC29A0AB8F8C9 /* Pods-METAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-METAR.release.xcconfig"; path = "Pods/Target Support Files/Pods-METAR/Pods-METAR.release.xcconfig"; sourceTree = "<group>"; };
+		E47BAFC66CF04FC2C81B1CB8 /* Pods-METAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-METAR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-METAR/Pods-METAR.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C7296790F339EDFB8003F5 /* Pods_METAR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +71,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E256ECA3A28C724E979235F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E47BAFC66CF04FC2C81B1CB8 /* Pods-METAR.debug.xcconfig */,
+				B48EC4DABBFAC29A0AB8F8C9 /* Pods-METAR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6AB7EF1E1C56563400C2B503 = {
 			isa = PBXGroup;
 			children = (
 				6AB7EF291C56563400C2B503 /* METAR */,
 				6AB7EF3E1C56563400C2B503 /* METARTests */,
 				6AB7EF281C56563400C2B503 /* Products */,
+				5E256ECA3A28C724E979235F /* Pods */,
+				83E165C80F14D0BD63E853D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +103,9 @@
 		6AB7EF291C56563400C2B503 /* METAR */ = {
 			isa = PBXGroup;
 			children = (
+				6AEDD4C31C5689E600388D79 /* Model */,
+				6AB7EF4D1C565AD300C2B503 /* Manager */,
+				6AB7EF4C1C565AC800C2B503 /* API */,
 				6AB7EF2A1C56563400C2B503 /* AppDelegate.swift */,
 				6AB7EF2C1C56563400C2B503 /* ViewController.swift */,
 				6AB7EF2E1C56563400C2B503 /* Main.storyboard */,
@@ -96,6 +125,40 @@
 			path = METARTests;
 			sourceTree = "<group>";
 		};
+		6AB7EF4C1C565AC800C2B503 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6AB7EF4E1C565BD100C2B503 /* APIManager.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		6AB7EF4D1C565AD300C2B503 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6AB7EF4A1C565ABF00C2B503 /* ForecastManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		6AEDD4C31C5689E600388D79 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6AEDD4C41C5689F400388D79 /* METAR.swift */,
+				6AEDD4C61C568DCD00388D79 /* METARInfo.swift */,
+				6AEDD4C81C568DDA00388D79 /* METARTranslations.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		83E165C80F14D0BD63E853D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				517677DC7C2A2B434D5AC383 /* Pods_METAR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AB7EF441C56563400C2B503 /* Build configuration list for PBXNativeTarget "METAR" */;
 			buildPhases = (
+				E4488E61947501E838DCAC33 /* Check Pods Manifest.lock */,
 				6AB7EF231C56563400C2B503 /* Sources */,
 				6AB7EF241C56563400C2B503 /* Frameworks */,
 				6AB7EF251C56563400C2B503 /* Resources */,
+				6A3882DCB90062A7577CA2A7 /* Embed Pods Frameworks */,
+				717967A7FEAB76B74DC57F39 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,12 +258,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6A3882DCB90062A7577CA2A7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-METAR/Pods-METAR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		717967A7FEAB76B74DC57F39 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-METAR/Pods-METAR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4488E61947501E838DCAC33 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6AB7EF231C56563400C2B503 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB7EF4F1C565BD100C2B503 /* APIManager.swift in Sources */,
+				6AB7EF4B1C565ABF00C2B503 /* ForecastManager.swift in Sources */,
 				6AB7EF2D1C56563400C2B503 /* ViewController.swift in Sources */,
+				6AEDD4C71C568DCD00388D79 /* METARInfo.swift in Sources */,
+				6AEDD4C51C5689F400388D79 /* METAR.swift in Sources */,
+				6AEDD4C91C568DDA00388D79 /* METARTranslations.swift in Sources */,
 				6AB7EF2B1C56563400C2B503 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +444,7 @@
 		};
 		6AB7EF451C56563400C2B503 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E47BAFC66CF04FC2C81B1CB8 /* Pods-METAR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = METAR/Info.plist;
@@ -336,6 +456,7 @@
 		};
 		6AB7EF461C56563400C2B503 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B48EC4DABBFAC29A0AB8F8C9 /* Pods-METAR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = METAR/Info.plist;
@@ -388,6 +509,7 @@
 				6AB7EF461C56563400C2B503 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6AB7EF471C56563400C2B503 /* Build configuration list for PBXNativeTarget "METARTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +518,7 @@
 				6AB7EF491C56563400C2B503 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
