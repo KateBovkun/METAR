@@ -23,8 +23,8 @@
                                 <color key="barTintColor" red="0.63137254901960782" green="0.83137254901960778" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type ICAO code (UUDD, UUWW, UUEE and etc. )" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbX-Ca-bSA">
-                                <rect key="frame" x="20" y="131" width="560" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type ICAO code (UUDD, UUWW, UUEE for Moscow airports; EDDB, EDDT for Berlin airports; etc. )" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbX-Ca-bSA">
+                                <rect key="frame" x="20" y="131" width="560" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="fLS-II-D6K"/>
                                 </constraints>
